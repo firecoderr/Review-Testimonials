@@ -1,0 +1,130 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+html {
+	font-family: calibri;
+	font-size: 16px;
+	color: black;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+body > h1 {
+	font-size: 3rem;
+	margin-bottom: 50px;
+	position: relative;
+}
+
+body > h1:after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 50%;
+	right: 0;
+	bottom: -10px;
+	transform: translateX(-50%);
+	width: 100px;
+	height: 3px;
+	background-color: rgb(0, 162, 255);
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+
+	width: 300px;
+	height: 350px;
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+
+	box-shadow: 0 0 5px black;
+	background-color: white;
+}
+
+.main img {
+	display: block;
+	max-width: 100px;
+	border-radius: 100%;
+	box-shadow: 6px -4px rgb(0, 162, 255);
+	margin-bottom: 10px;
+}
+
+.main .name {
+	font-size: 1.5rem;
+	font-weight: 900;
+}
+
+.main .profession {
+	color: rgb(0, 162, 255);
+	margin: 0 0 10px 0;
+	font-size: 1.05rem;
+}
+
+.main i {
+	cursor: pointer;
+	margin: 0 5px;
+	color: rgb(0, 162, 255);
+	font-size: 1.2rem;
+	margin-top: 10px;
+}
+
+.main *::selection {
+	display: none;
+}
+
+.main button {
+	padding: 5px 10px;
+	background-color: white;
+	border: 1px solid rgb(0, 162, 255);
+	color: rgb(0, 162, 255);
+	background-color: rgba(0, 162, 255, 0.193);
+}
+
+.main button {
+	display: block;
+	margin-top: 10px;
+	font-size: 1.01rem;
+}
+
+.main .btn:hover {
+	opacity: .7;
+}
